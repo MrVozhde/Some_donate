@@ -15,4 +15,8 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="fontFamily">@font/greate_font</item>
+    </style>
+
 </resources>
