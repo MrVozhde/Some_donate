@@ -32,7 +32,7 @@ public class Fragment1 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.fragment1,container,false);
 
-        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_porbazdid_id);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_porbazdid_f1_id);
 
         adapter = new Recycler_Adapter_porbazdid(getActivity(),items);
         LinearLayoutManager layoutmanager = new LinearLayoutManager(getActivity() , LinearLayoutManager.HORIZONTAL , false);

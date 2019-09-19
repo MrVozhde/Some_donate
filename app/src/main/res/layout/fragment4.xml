@@ -6,14 +6,30 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/txt_test"
-        android:text="Fragment4"
+        android:text="@string/porbazdid"
         android:textStyle="bold"
-        android:textAlignment="center"
         android:textColor="@color/color_black"
-        android:layout_centerInParent="true"
-        android:textSize="@dimen/textsize_26sp"
-        android:layout_height="wrap_content"/>
+        android:textSize="@dimen/textsize_16sp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_test"
+        android:layout_margin="@dimen/margin_5dp"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_5dp"
+            android:scrollbars="horizontal"
+            android:id="@+id/recycler_porbazdid_f4_id"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
