@@ -4,10 +4,12 @@
     <group android:checkableBehavior="single">
 
         <item android:title="@string/person_info"
-            android:id="@+id/person_info_id"/>
+            android:id="@+id/person_info_id"
+            android:icon="@drawable/ic_sign_in"/>
 
         <item
             android:title="@string/email"
-            android:id="@+id/mail_id"/>
+            android:id="@+id/mail_id"
+            android:icon="@drawable/ic_login"/>
     </group>
 </menu>
