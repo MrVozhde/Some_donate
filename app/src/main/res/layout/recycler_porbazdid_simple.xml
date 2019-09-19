@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="130dp"
-    app:cardCornerRadius="2dp"
+    app:cardCornerRadius="4dp"
     android:layout_margin="@dimen/margin_3dp"
     android:layout_height="wrap_content">
 
     <RelativeLayout
-        android:background="@color/fragment_background_color"
+        android:background="@color/colorAccent"
         android:layout_width="match_parent"
         android:layout_margin="@dimen/margin_3dp"
         android:layout_height="130dp">
@@ -26,7 +26,7 @@
             android:id="@+id/txt_item_name_recycler_id"
             android:layout_alignLeft="@id/img_item_pic_recycler_id"
             android:layout_alignRight="@id/img_item_pic_recycler_id"
-            android:textColor="#021aee"
+            android:textColor="@color/color_white"
             android:textAlignment="center"
             android:textStyle="bold"
             android:layout_alignParentBottom="true"

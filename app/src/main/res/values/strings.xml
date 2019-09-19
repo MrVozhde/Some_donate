@@ -2,4 +2,10 @@
     <string name="app_name">ome Doanate</string>
     <string name="some_donate">Some Donate</string>
     <string name="porbazdid">پربازدیدها</string>
+    <string name="image">image</string>
+    <string name="person_info">عضویت</string>
+    <string name="email">ورود</string>
+    <string name="subheader">subheader</string>
+    <string name="showall">نمایش همه</string>
+    <string name="title">Title</string>
 </resources>

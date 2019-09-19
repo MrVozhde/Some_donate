@@ -19,4 +19,8 @@
         <item name="fontFamily">@font/greate_font</item>
     </style>
 
+    <style name="ActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
 </resources>

@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:background="@color/fragment_background_color"
     android:layout_height="match_parent">
 
     <TextView
@@ -21,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_below="@id/txt_test"
         android:layout_margin="@dimen/margin_5dp"
+        android:id="@+id/r5"
         android:layout_height="wrap_content">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -28,6 +30,36 @@
             android:layout_margin="@dimen/margin_5dp"
             android:scrollbars="horizontal"
             android:id="@+id/recycler_porbazdid_f4_id"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txt_test_showall_id"
+        android:text="@string/showall"
+        android:textStyle="bold"
+        android:layout_below="@id/r5"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/textsize_16sp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_test_showall_id"
+        android:layout_margin="@dimen/margin_5dp"
+        android:id="@+id/r2"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_5dp"
+            android:elevation="@dimen/cardelevation_3dp"
+            android:scrollbars="vertical"
+            android:id="@+id/recycler_showall_f4_id"
             android:layout_height="wrap_content"/>
 
     </RelativeLayout>

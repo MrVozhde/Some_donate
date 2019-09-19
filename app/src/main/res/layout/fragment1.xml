@@ -2,13 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/color_white"
+    android:background="@color/fragment_background_color"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:layout_width="match_parent"
-        android:id="@+id/txt_test"
+        android:id="@+id/txt_test_porbazdid_id"
         android:text="@string/porbazdid"
         android:textStyle="bold"
         android:textColor="@color/color_black"
@@ -20,17 +20,50 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_below="@id/txt_test"
+        android:layout_below="@id/txt_test_porbazdid_id"
         android:layout_margin="@dimen/margin_5dp"
+        android:id="@+id/r1"
         android:layout_height="wrap_content">
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_margin="@dimen/margin_5dp"
+            android:elevation="@dimen/cardelevation_3dp"
             android:scrollbars="horizontal"
             android:id="@+id/recycler_porbazdid_f1_id"
             android:layout_height="wrap_content"/>
 
     </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txt_test_showall_id"
+        android:text="@string/showall"
+        android:textStyle="bold"
+        android:layout_below="@id/r1"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/textsize_16sp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_test_showall_id"
+        android:layout_margin="@dimen/margin_5dp"
+        android:id="@+id/r2"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_5dp"
+            android:elevation="@dimen/cardelevation_3dp"
+            android:scrollbars="vertical"
+            android:id="@+id/recycler_showall_f1_id"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
 
 </RelativeLayout>

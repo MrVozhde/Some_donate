@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private void setTabsIcons(){
         int[] ids = {R.drawable.ic_sarmaye_24dp , R.drawable.ic_khadamat_24dp , R.drawable.ic_kheirie_24dp
          , R.drawable.ic_mahsol_24dp};
-        int selectedColor = Color.parseColor("#2196F3");
+        int selectedColor = Color.parseColor("#424242");
         int unSelectedColor = Color.parseColor("#ffffff");
         Util.setupTabIcons(getApplicationContext() , tabLayout , ids , 1 , selectedColor , unSelectedColor);
     }

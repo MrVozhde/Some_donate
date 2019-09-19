@@ -1,6 +1,6 @@
 package com.example.omedoanate.Model;
 
-public class Recycler_model {
+public class Recycler_model_porbazdid {
 
     private String title;
     private int image ;
@@ -21,11 +21,11 @@ public class Recycler_model {
         this.image = image;
     }
 
-    public Recycler_model(String title, int image) {
+    public Recycler_model_porbazdid(String title, int image) {
         this.title = title;
         this.image = image;
     }
 
-    public Recycler_model() {
+    public Recycler_model_porbazdid() {
     }
 }

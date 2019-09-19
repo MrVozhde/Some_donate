@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.omedoanate.Model.Recycler_model;
+import com.example.omedoanate.Model.Recycler_model_porbazdid;
 import com.example.omedoanate.R;
 
 import java.util.List;
@@ -18,9 +18,9 @@ import java.util.List;
 public class Recycler_Adapter_porbazdid extends RecyclerView.Adapter<Recycler_Adapter_porbazdid.ViewHolder>{
 
     private Context context;
-    private List<Recycler_model> model;
+    private List<Recycler_model_porbazdid> model;
 
-    public Recycler_Adapter_porbazdid(Context context, List<Recycler_model> model) {
+    public Recycler_Adapter_porbazdid(Context context, List<Recycler_model_porbazdid> model) {
         this.context = context;
         this.model = model;
     }
@@ -34,7 +34,7 @@ public class Recycler_Adapter_porbazdid extends RecyclerView.Adapter<Recycler_Ad
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Recycler_model rb = model.get(position);
+        Recycler_model_porbazdid rb = model.get(position);
         holder.title.setText(rb.getTitle());
         holder.image.setImageResource(rb.getImage());
     }
