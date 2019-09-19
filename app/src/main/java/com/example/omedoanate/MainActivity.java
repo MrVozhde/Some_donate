@@ -1,7 +1,10 @@
 package com.example.omedoanate;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
 import android.graphics.Color;
@@ -18,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     Toolbar toolbar;
     TabLayout tabLayout;
+    DrawerLayout drawerLayout;
 
     Fragment1 fragment1 = new Fragment1();
     Fragment2 fragment2 = new Fragment2();
@@ -32,10 +36,17 @@ public class MainActivity extends AppCompatActivity {
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
         toolbar = (Toolbar) findViewById(R.id.toolbar_main_id);
         tabLayout = (TabLayout) findViewById(R.id.tabs);
-
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout_id);
 
         toolbar.setTitle("Some Donate");
         setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeButtonEnabled(true);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this , drawerLayout , toolbar , 0 , 0);
+        toggle.syncState();
 
         setUpViewPager(viewPager);
         tabLayout.setupWithViewPager(viewPager);
