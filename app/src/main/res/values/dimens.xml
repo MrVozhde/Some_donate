@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_welcome_size28sp">65sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="dividerHeight_3dp">3dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="textsize_18sp">18sp</dimen>
+    <dimen name="textsize_20sp">20sp</dimen>
+    <dimen name="textsize_26sp">26sp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="elevation_8dp">8dp</dimen>
+    <dimen name="textsize_14sp">14sp</dimen>
+    <dimen name="textsize_16sp">16sp</dimen>
+    <dimen name="cardelevation_3dp">3dp</dimen>
+    <dimen name="elevation_5dp">5dp</dimen>
+</resources>

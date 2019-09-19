@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash.Splash">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/some_donate"
+        android:textColor="@color/color_black"
+        android:textAlignment="center"
+        android:textSize="@dimen/textsize_26sp"
+        android:textStyle="bold"
+        android:id="@+id/txt_splash_id"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_below="@id/txt_splash_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
