@@ -19,4 +19,6 @@
     <string name="hint_accnum">شماره کارت</string>
     <string name="hint_sheba">دریافت شبا</string>
     <string name="finalsubmit">ثبت نهایی و نمایش QR Code</string>
+    <string name="getcode">دریافت کد</string>
+    <string name="backtomainactivity">بازگشت به صفحه اصلی</string>
 </resources>
