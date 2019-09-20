@@ -85,14 +85,14 @@
 
     <EditText
         android:layout_below="@id/txt_password_id"
-        android:id="@+id/txt_re_password_id"
+        android:id="@+id/txt_rpassword_id"
         android:layout_margin="@dimen/margin_15dp"
         android:padding="@dimen/padding_10dp"
-        android:hint="@string/hint_repassword"
+        android:hint="@string/hint_password"
         android:textAlignment="center"
-        android:textColor="@color/colorAccent"
         android:inputType="textPassword"
-
+        android:textColor="@color/colorAccent"
+        android:maxLines="1"
         android:textStyle="bold"
         android:background="@drawable/back_edittext"
         android:layout_width="match_parent"

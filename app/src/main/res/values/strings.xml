@@ -16,4 +16,7 @@
     <string name="hint_repassword">تکرار رمز عبور</string>
     <string name="hint_pishsabtenam">پیش ثبت نام</string>
     <string name="hint_continue">مرحله بعد و تکمیل ثبت نام</string>
+    <string name="hint_accnum">شماره کارت</string>
+    <string name="hint_sheba">دریافت شبا</string>
+    <string name="finalsubmit">ثبت نهایی و نمایش QR Code</string>
 </resources>

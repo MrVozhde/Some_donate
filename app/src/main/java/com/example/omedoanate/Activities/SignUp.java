@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.service.autofill.OnClickAction;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,7 +28,7 @@ public class SignUp extends AppCompatActivity {
         txt_nationalcode = findViewById(R.id.txt_nationalcode_id);
         txt_phone = findViewById(R.id.txt_phonenumber_id);
         txt_pass = findViewById(R.id.txt_password_id);
-        txt_Rpass = findViewById(R.id.txt_re_password_id);
+        txt_Rpass = findViewById(R.id.txt_rpassword_id);
         btn_submit = findViewById(R.id.btn_submit_id);
         btn_continue = findViewById(R.id.btn_continue_id);
 
@@ -54,6 +53,13 @@ public class SignUp extends AppCompatActivity {
                         Toast.makeText(SignUp.this, "رمز عبور یکسان نیست !", Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+        });
+
+        btn_continue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SignUp.this , Signup_continue.class));
             }
         });
     }
