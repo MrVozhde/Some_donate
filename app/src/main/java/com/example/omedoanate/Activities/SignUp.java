@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.omedoanate.MainActivity;
 import com.example.omedoanate.R;
 
 public class SignUp extends AppCompatActivity {

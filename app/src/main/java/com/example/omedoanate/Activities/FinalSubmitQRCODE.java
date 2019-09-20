@@ -13,7 +13,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.omedoanate.MainActivity;
 import com.example.omedoanate.R;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.zxing.WriterException;

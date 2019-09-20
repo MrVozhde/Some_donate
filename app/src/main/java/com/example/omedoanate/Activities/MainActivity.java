@@ -1,4 +1,4 @@
-package com.example.omedoanate;
+package com.example.omedoanate.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -14,11 +14,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.omedoanate.Activities.SignUp;
 import com.example.omedoanate.Fragments.Fragment1;
 import com.example.omedoanate.Fragments.Fragment2;
 import com.example.omedoanate.Fragments.Fragment3;
 import com.example.omedoanate.Fragments.Fragment4;
+import com.example.omedoanate.R;
+import com.example.omedoanate.Util;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 
@@ -72,6 +73,11 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.login_id :{
                         Toast.makeText(MainActivity.this, "ورود", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case R.id.profile_id:{
+                        startActivity(new Intent(MainActivity.this , Profile.class));
+                        drawerLayout.closeDrawers();
                         break;
                     }
                 }

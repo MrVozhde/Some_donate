@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.omedoanate.MainActivity;
+import com.example.omedoanate.Activities.MainActivity;
 import com.example.omedoanate.R;
 
 public class Splash extends AppCompatActivity {
