@@ -9,4 +9,11 @@
     <string name="showall">نمایش همه</string>
     <string name="title">Title</string>
     <string name="wellcome">به نرم افزار خود خوش آمدید</string>
+    <string name="hint_fullname">نام و نام خانوادگی</string>
+    <string name="int_nationacode">کد ملی</string>
+    <string name="hint_phonenumber">شماره تلفن</string>
+    <string name="hint_password">رمز عبور</string>
+    <string name="hint_repassword">تکرار رمز عبور</string>
+    <string name="hint_pishsabtenam">پیش ثبت نام</string>
+    <string name="hint_continue">مرحله بعد و تکمیل ثبت نام</string>
 </resources>

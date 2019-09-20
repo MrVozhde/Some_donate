@@ -11,12 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:fontFamily="@font/greate_font"
+        android:fontFamily="@font/sketch"
         android:text="@string/some_donate"
-        android:textColor="@color/color_black"
+        android:textColor="@color/color_green"
         android:textAlignment="center"
-        android:textSize="@dimen/textsize_36sp"
-        android:textStyle="bold"
+        android:textSize="60sp"
         android:id="@+id/txt_splash_id"
         />
 

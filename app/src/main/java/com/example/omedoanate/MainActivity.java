@@ -1,5 +1,6 @@
 package com.example.omedoanate;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,13 +8,18 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
 
+import com.example.omedoanate.Activities.SignUp;
 import com.example.omedoanate.Fragments.Fragment1;
 import com.example.omedoanate.Fragments.Fragment2;
 import com.example.omedoanate.Fragments.Fragment3;
 import com.example.omedoanate.Fragments.Fragment4;
+import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     DrawerLayout drawerLayout;
 
+    NavigationView navigationView;
     Fragment1 fragment1 = new Fragment1();
     Fragment2 fragment2 = new Fragment2();
     Fragment3 fragment3 = new Fragment3();
@@ -33,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        navigationView = findViewById(R.id.navigation_view_id);
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
         toolbar = (Toolbar) findViewById(R.id.toolbar_main_id);
         tabLayout = (TabLayout) findViewById(R.id.tabs);
@@ -52,6 +60,24 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         setTabsIcons();
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()){
+                    case R.id.person_info_id :{
+                        startActivity(new Intent(MainActivity.this , SignUp.class));
+                        drawerLayout.closeDrawers();
+                        break;
+                    }
+                    case R.id.login_id :{
+                        Toast.makeText(MainActivity.this, "ورود", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                }
+                return true;
+            }
+        });
 
     }
 

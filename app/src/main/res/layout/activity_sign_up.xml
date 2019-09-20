@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignUp">
+
+    <TextView
+        android:fontFamily="@font/greate_font"
+        android:text="@string/some_donate"
+        android:layout_width="match_parent"
+        android:id="@+id/t1"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textColor="@color/color_black"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_below="@id/t1"
+        android:id="@+id/txt_fullname_id"
+        android:layout_margin="@dimen/margin_15dp"
+        android:padding="@dimen/padding_10dp"
+        android:hint="@string/hint_fullname"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:background="@drawable/back_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_below="@id/txt_fullname_id"
+        android:id="@+id/txt_nationalcode_id"
+        android:layout_margin="@dimen/margin_15dp"
+        android:padding="@dimen/padding_10dp"
+        android:inputType="number"
+        android:maxLines="1"
+        android:hint="@string/int_nationacode"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:background="@drawable/back_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_below="@id/txt_nationalcode_id"
+        android:id="@+id/txt_phonenumber_id"
+        android:layout_margin="@dimen/margin_15dp"
+        android:padding="@dimen/padding_10dp"
+        android:hint="@string/hint_phonenumber"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:inputType="number"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:background="@drawable/back_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_below="@id/txt_phonenumber_id"
+        android:id="@+id/txt_password_id"
+        android:layout_margin="@dimen/margin_15dp"
+        android:padding="@dimen/padding_10dp"
+        android:hint="@string/hint_password"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        android:textColor="@color/colorAccent"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:background="@drawable/back_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_below="@id/txt_password_id"
+        android:id="@+id/txt_re_password_id"
+        android:layout_margin="@dimen/margin_15dp"
+        android:padding="@dimen/padding_10dp"
+        android:hint="@string/hint_repassword"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:inputType="textPassword"
+
+        android:textStyle="bold"
+        android:background="@drawable/back_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_submit_id"
+            android:text="@string/hint_pishsabtenam"
+            android:layout_weight="0.5"
+            android:background="@color/color_green"
+            android:layout_margin="@dimen/margin_15dp"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="@dimen/textsize_18sp"
+            android:layout_height="wrap_content"
+
+            />
+        <Button
+            android:id="@+id/btn_continue_id"
+            android:text="@string/hint_continue"
+            android:layout_weight="0.5"
+            android:background="@color/color_green"
+            android:layout_margin="@dimen/margin_15dp"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="@dimen/textsize_16sp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

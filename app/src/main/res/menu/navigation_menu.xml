@@ -9,7 +9,7 @@
 
         <item
             android:title="@string/email"
-            android:id="@+id/mail_id"
+            android:id="@+id/login_id"
             android:icon="@drawable/ic_login"/>
     </group>
 </menu>
