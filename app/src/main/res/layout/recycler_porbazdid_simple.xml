@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="130dp"
     app:cardCornerRadius="4dp"
+    android:id="@+id/card_porbazdid_id"
     android:layout_margin="@dimen/margin_3dp"
     android:layout_height="wrap_content">
 

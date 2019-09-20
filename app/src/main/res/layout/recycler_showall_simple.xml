@@ -5,6 +5,7 @@
     android:layout_margin="@dimen/margin_3dp"
     app:cardCornerRadius="4dp"
     app:cardElevation="@dimen/cardelevation_3dp"
+    android:id="@+id/card_showall_id"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 

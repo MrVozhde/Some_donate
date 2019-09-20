@@ -12,19 +12,13 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:fontFamily="@font/sketch"
-        android:text="@string/some_donate"
+        android:text="some \n donate"
         android:textColor="@color/color_green"
         android:textAlignment="center"
         android:textSize="60sp"
         android:id="@+id/txt_splash_id"
         />
 
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_below="@id/txt_splash_id"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_10dp"
-        android:layout_height="wrap_content"/>
 
 
 </RelativeLayout>

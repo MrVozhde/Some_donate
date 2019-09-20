@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.FinalSubmitQRCODE"></activity>
+        <activity android:name=".Activities.ShowItems"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Activities.FinalSubmitQRCODE" />
         <activity
             android:name=".Activities.Signup_continue"
             android:parentActivityName=".Activities.SignUp" />

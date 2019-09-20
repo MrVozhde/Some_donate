@@ -21,4 +21,12 @@
     <string name="finalsubmit">ثبت نهایی و نمایش QR Code</string>
     <string name="getcode">دریافت کد</string>
     <string name="backtomainactivity">بازگشت به صفحه اصلی</string>
+    <string name="goal">هدف : 150,000 تومان</string>
+    <string name="donated">مقدار دونیت شده : 100,000 تومان</string>
+    <string name="donate_content">برای خیریه به مردم سیل زده ی کرمانشاه و خرید کانکس</string>
+    <string name="donate">حمایت مالی</string>
+    <string name="simplecost">+100,000 تومان</string>
+    <string name="twodays_ago">2 روز پیش</string>
+    <string name="nobody">ناشناس</string>
+    <string name="texr">با آرزوی موفقیت برای شما</string>
 </resources>
