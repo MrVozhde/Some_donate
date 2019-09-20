@@ -2,10 +2,10 @@ package com.example.omedoanate.Model;
 
 public class Recycler_model_profile {
 
-    String name , message;
-    int cost;
+    String name , message , cost;
 
-    public Recycler_model_profile(String name, String message, int cost) {
+
+    public Recycler_model_profile(String name, String message, String cost) {
         this.name = name;
         this.message = message;
         this.cost = cost;
@@ -30,11 +30,11 @@ public class Recycler_model_profile {
         this.message = message;
     }
 
-    public int getCost() {
+    public String getCost() {
         return cost;
     }
 
-    public void setCost(int cost) {
+    public void setCost(String cost) {
         this.cost = cost;
     }
 }

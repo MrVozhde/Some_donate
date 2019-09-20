@@ -116,6 +116,7 @@
     <Button
         android:layout_width="match_parent"
         android:text="@string/donate"
+        android:id="@+id/btn_donate_id"
         android:textColor="@color/color_white"
         android:textStyle="bold"
         android:textSize="@dimen/textsize_18sp"

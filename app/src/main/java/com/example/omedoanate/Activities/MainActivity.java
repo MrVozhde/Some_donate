@@ -84,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
     }
 
     private void setTabsIcons(){
@@ -92,15 +91,15 @@ public class MainActivity extends AppCompatActivity {
          , R.drawable.ic_mahsol_24dp};
         int selectedColor = Color.parseColor("#424242");
         int unSelectedColor = Color.parseColor("#ffffff");
-        Util.setupTabIcons(getApplicationContext() , tabLayout , ids , 1 , selectedColor , unSelectedColor);
+        Util.setupTabIcons(getApplicationContext() , tabLayout , ids , 2 , selectedColor , unSelectedColor);
     }
 
     private void setUpViewPager(ViewPager upViewPager){
         Util.ViewPagerAdapter adapter = new Util.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(fragment1 , "fragment1");
-        adapter.addFragment(fragment2 , "fragment2");
-        adapter.addFragment(fragment3 , "fragment3");
-        adapter.addFragment(fragment4 , "fragment4");
+        adapter.addFragment(fragment1 , "سرمایه");
+        adapter.addFragment(fragment2 , "خدمات");
+        adapter.addFragment(fragment3 , "خیریه");
+        adapter.addFragment(fragment4 , "محصولات");
         viewPager.setAdapter(adapter);
     }
 }

@@ -5,7 +5,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -18,6 +21,7 @@ import java.util.ArrayList;
 public class ShowItems extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private Button btn_donate;
     private TextView txt_title , txt_goal , txt_donated , txt_donate_content;
     private RecyclerView recyclerView;
     private ProgressBar progressBar;
@@ -29,10 +33,17 @@ public class ShowItems extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_items);
 
+        btn_donate = findViewById(R.id.btn_donate_id);
         toolbar = findViewById(R.id.toolbar_items_id);
         txt_title = findViewById(R.id.txt_title_id);
         recyclerView = findViewById(R.id.reycler_items_donated_id);
 
+        btn_donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ShowItems.this , Donate.class));
+            }
+        });
 
         txt_title.setText(getIntent().getStringExtra("title"));
 

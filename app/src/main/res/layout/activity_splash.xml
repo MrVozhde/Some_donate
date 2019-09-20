@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:fontFamily="@font/sketch"
-        android:text="some \n donate"
+        android:text="some\ndonate"
         android:textColor="@color/color_green"
         android:textAlignment="center"
         android:textSize="60sp"

@@ -19,6 +19,7 @@ import com.example.omedoanate.Adapters.Recycler_Adapter_profile;
 import com.example.omedoanate.Model.Recycler_model_profile;
 import com.example.omedoanate.R;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -36,23 +37,19 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        PostData();
-
         toolbar = findViewById(R.id.toolbar_profile_id);
         recyclerView = findViewById(R.id.recycler_profile_id);
 
         adapter_profile = new Recycler_Adapter_profile(getApplicationContext() , items);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this , LinearLayoutManager.VERTICAL , false);
         recyclerView.setLayoutManager(linearLayoutManager);
-
-        items.add(new Recycler_model_profile("amin" , "movafagh bashi" ,24 ));
-
+        //items.add(new Recycler_model_profile("amin","movafagh bashid"," 546666 تومان"));
+        PostData();
         recyclerView.setAdapter(adapter_profile);
 
         toolbar.setTitle("پروفایل");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
     }
 
@@ -74,7 +71,24 @@ public class Profile extends AppCompatActivity {
         final JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, URL, object, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                Toast.makeText(Profile.this, response.toString(), Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(Profile.this, response.toString(), Toast.LENGTH_LONG).show();
+
+                try {
+                    String status = response.getString("status");
+                    String name = response.getString("DName");
+                    String mess = response.getString("Comment");
+                    String cost = response.getString("Cost");
+
+                    if (status.equals("success")){
+                        items.add(new Recycler_model_profile(name,mess,cost));
+                    }else {
+                        Toast.makeText(Profile.this, "namovafagh", Toast.LENGTH_SHORT).show();
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
                 dialog.dismiss();
             }
         }, new Response.ErrorListener() {

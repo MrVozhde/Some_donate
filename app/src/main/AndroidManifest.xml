@@ -14,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Profile" android:parentActivityName=".Activities.MainActivity"/>
+        <activity android:name=".Activities.Donate"></activity>
+        <activity
+            android:name=".Activities.Profile"
+            android:parentActivityName=".Activities.MainActivity" />
         <activity
             android:name=".Activities.ShowItems"
             android:parentActivityName=".Activities.MainActivity" />

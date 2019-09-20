@@ -34,7 +34,7 @@ public class Recycler_Adapter_profile extends RecyclerView.Adapter<Recycler_Adap
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Recycler_model_profile rp = list.get(position);
-        holder.txt_cost.setText(String.valueOf(rp.getCost()));
+        holder.txt_cost.setText(rp.getCost());
         holder.txt_name.setText(rp.getName());
         holder.txt_message.setText(rp.getMessage());
 
