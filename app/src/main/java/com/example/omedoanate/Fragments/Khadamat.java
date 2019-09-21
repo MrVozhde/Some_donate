@@ -18,7 +18,7 @@ import com.example.omedoanate.R;
 
 import java.util.ArrayList;
 
-public class Fragment2 extends Fragment {
+public class Khadamat extends Fragment {
 
     private RecyclerView recyclerView_porbazdid;
     private RecyclerView recyclerView_showall;

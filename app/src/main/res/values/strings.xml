@@ -40,4 +40,9 @@
     <string name="toman">2,000 تومان</string>
     <string name="namesss">علی محمدی</string>
     <string name="ssss">با آرزوی موفقیت برای شما</string>
+    <string name="showcode">نمایش کد</string>
+    <string name="information">راهنما</string>
+    <string name="enter_donate">مقدار حمایت مالی خود را وارد کنید</string>
+    <string name="iaal">ريال</string>
+    <string name="dargah_connection">اتصال به درگاه پرداخت</string>
 </resources>

@@ -18,12 +18,12 @@ import com.example.omedoanate.R;
 
 import java.util.ArrayList;
 
-public class Fragment4 extends Fragment {
+public class Kheirie extends Fragment {
 
     private RecyclerView recyclerView_porbazdid;
     private RecyclerView recyclerView_showall;
     private ArrayList<Recycler_model_showall> itemsshow = new ArrayList<>();
-    private ArrayList<Recycler_model_porbazdid> items_porbazdid = new ArrayList<>();
+    private ArrayList<Recycler_model_porbazdid> itemsporbazdid = new ArrayList<>();
     private Recycler_Adapter_porbazdid adapter_porbazdid;
     private Recycler_Adapter_Showall adapter_showall;
 
@@ -36,12 +36,12 @@ public class Fragment4 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment4 , container , false);
+        View view = inflater.inflate(R.layout.fragment3 , container , false);
 
-        recyclerView_porbazdid = (RecyclerView) view.findViewById(R.id.recycler_porbazdid_f4_id);
-        recyclerView_showall = (RecyclerView) view.findViewById(R.id.recycler_showall_f4_id);
+        recyclerView_porbazdid = (RecyclerView) view.findViewById(R.id.recycler_porbazdid_f3_id);
+        recyclerView_showall = (RecyclerView) view.findViewById(R.id.recycler_showall_f3_id);
 
-        adapter_porbazdid = new Recycler_Adapter_porbazdid(getActivity() , items_porbazdid);
+        adapter_porbazdid = new Recycler_Adapter_porbazdid(getActivity() , itemsporbazdid);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity() , LinearLayoutManager.HORIZONTAL , false);
         recyclerView_porbazdid.setLayoutManager(linearLayoutManager);
         setItems();
@@ -57,16 +57,16 @@ public class Fragment4 extends Fragment {
     }
 
     public void setItems(){
-        items_porbazdid.add(new Recycler_model_porbazdid("هلال احمر" , R.drawable.ic_person_black_24dp));
-        items_porbazdid.add(new Recycler_model_porbazdid("حسن" , R.drawable.ic_person_black_24dp));
-        items_porbazdid.add(new Recycler_model_porbazdid("امین" , R.drawable.ic_person_black_24dp));
-        items_porbazdid.add(new Recycler_model_porbazdid("کمیته امداد" , R.drawable.ic_person_black_24dp));
-        items_porbazdid.add(new Recycler_model_porbazdid("سایپا" , R.drawable.ic_person_black_24dp));
-        items_porbazdid.add(new Recycler_model_porbazdid("ایران خودرو" , R.drawable.ic_person_black_24dp));
-        items_porbazdid.add(new Recycler_model_porbazdid("محسن" , R.drawable.ic_person_black_24dp));
-        items_porbazdid.add(new Recycler_model_porbazdid("جعفر" , R.drawable.ic_person_black_24dp));
-        items_porbazdid.add(new Recycler_model_porbazdid("زهره" , R.drawable.ic_person_black_24dp));
-        items_porbazdid.add(new Recycler_model_porbazdid("سمانه" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("هلال احمر" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("حسن" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("امین" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("کمیته امداد" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("سایپا" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("ایران خودرو" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("محسن" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("جعفر" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("زهره" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("سمانه" , R.drawable.ic_person_black_24dp));
     }
 
     public void setItems_showall(){
@@ -86,5 +86,4 @@ public class Fragment4 extends Fragment {
         itemsshow.add(new Recycler_model_showall("هلال احمر","120,000 تومان" , " 15,000 تومان" , R.drawable.ic_person_black_24dp));
         itemsshow.add(new Recycler_model_showall("هلال احمر","120,000 تومان" , " 15,000 تومان" , R.drawable.ic_person_black_24dp));
     }
-
 }

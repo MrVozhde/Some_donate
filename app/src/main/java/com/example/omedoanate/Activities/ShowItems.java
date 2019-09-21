@@ -41,7 +41,9 @@ public class ShowItems extends AppCompatActivity {
         btn_donate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ShowItems.this , Donate.class));
+                Intent intent = new Intent(getApplicationContext() , Donate.class);
+                intent.putExtra("nameH" , txt_title.getText().toString());
+                startActivity(intent);
             }
         });
 

@@ -7,17 +7,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
-
-import com.example.omedoanate.Fragments.Fragment1;
-import com.example.omedoanate.Fragments.Fragment2;
-import com.example.omedoanate.Fragments.Fragment3;
-import com.example.omedoanate.Fragments.Fragment4;
+import com.example.omedoanate.Fragments.Sarmaye;
+import com.example.omedoanate.Fragments.Khadamat;
+import com.example.omedoanate.Fragments.Kheirie;
+import com.example.omedoanate.Fragments.Mahsolat;
 import com.example.omedoanate.R;
 import com.example.omedoanate.Util;
 import com.google.android.material.navigation.NavigationView;
@@ -31,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
 
     NavigationView navigationView;
-    Fragment1 fragment1 = new Fragment1();
-    Fragment2 fragment2 = new Fragment2();
-    Fragment3 fragment3 = new Fragment3();
-    Fragment4 fragment4 = new Fragment4();
+    Sarmaye fragment1 = new Sarmaye();
+    Khadamat fragment2 = new Khadamat();
+    Kheirie fragment3 = new Kheirie();
+    Mahsolat fragment4 = new Mahsolat();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +76,14 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.profile_id:{
                         startActivity(new Intent(MainActivity.this , Profile.class));
                         drawerLayout.closeDrawers();
+                        break;
+                    }
+                    case R.id.information_id:{
+                        Toast.makeText(MainActivity.this, "راهنما", Toast.LENGTH_SHORT).show();
+                        break;
+                    }
+                    case R.id.show_qrcode_id:{
+                        Toast.makeText(MainActivity.this, "نمایش کد", Toast.LENGTH_SHORT).show();
                         break;
                     }
                 }

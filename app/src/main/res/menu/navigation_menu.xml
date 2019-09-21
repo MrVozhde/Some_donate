@@ -16,5 +16,17 @@
             android:id="@+id/profile_id"
             android:icon="@drawable/ic_profile_24dp"
             android:title="@string/profile"/>
+
+        <item
+            android:id="@+id/information_id"
+            android:title="@string/information"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            />
+
+        <item
+            android:id="@+id/show_qrcode_id"
+            android:title="@string/showcode"
+            android:icon="@drawable/ic_code_black_24dp"
+            />
     </group>
 </menu>

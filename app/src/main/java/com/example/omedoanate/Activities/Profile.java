@@ -43,14 +43,13 @@ public class Profile extends AppCompatActivity {
         adapter_profile = new Recycler_Adapter_profile(getApplicationContext() , items);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this , LinearLayoutManager.VERTICAL , false);
         recyclerView.setLayoutManager(linearLayoutManager);
-        //items.add(new Recycler_model_profile("amin","movafagh bashid"," 546666 تومان"));
-        PostData();
+        items.add(new Recycler_model_profile("amin","movafagh bashid"," 546666 تومان"));
+        //PostData();
         recyclerView.setAdapter(adapter_profile);
 
         toolbar.setTitle("پروفایل");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 
     private void PostData() {
