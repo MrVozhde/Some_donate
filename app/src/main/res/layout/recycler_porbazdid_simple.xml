@@ -14,10 +14,11 @@
         android:layout_margin="@dimen/margin_3dp"
         android:layout_height="130dp">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:layout_centerInParent="true"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
             android:layout_width="80dp"
-            android:background="@drawable/image_porbazdid_border"
             android:id="@+id/img_item_pic_recycler_id"
             android:layout_height="80dp"/>
 

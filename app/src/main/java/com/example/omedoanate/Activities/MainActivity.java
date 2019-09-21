@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
 
     NavigationView navigationView;
-    Sarmaye fragment1 = new Sarmaye();
-    Khadamat fragment2 = new Khadamat();
-    Kheirie fragment3 = new Kheirie();
-    Mahsolat fragment4 = new Mahsolat();
+    Sarmaye sarmaye = new Sarmaye();
+    Khadamat khadamat = new Khadamat();
+    Kheirie kheirie = new Kheirie();
+    Mahsolat mahsolat = new Mahsolat();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,10 +102,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpViewPager(ViewPager upViewPager){
         Util.ViewPagerAdapter adapter = new Util.ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(fragment1 , "سرمایه");
-        adapter.addFragment(fragment2 , "خدمات");
-        adapter.addFragment(fragment3 , "خیریه");
-        adapter.addFragment(fragment4 , "محصولات");
+        adapter.addFragment(sarmaye, "سرمایه");
+        adapter.addFragment(khadamat, "خدمات");
+        adapter.addFragment(kheirie, "خیریه");
+        adapter.addFragment(mahsolat, "محصولات");
         viewPager.setAdapter(adapter);
     }
 }

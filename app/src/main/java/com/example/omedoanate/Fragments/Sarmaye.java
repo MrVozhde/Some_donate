@@ -58,9 +58,9 @@ public class Sarmaye extends Fragment {
     }
 
     public void setItems_porbazdid(){
-        itemsporbazdid.add(new Recycler_model_porbazdid("هلال احمر" , R.drawable.ic_person_black_24dp));
-        itemsporbazdid.add(new Recycler_model_porbazdid("حسن" , R.drawable.ic_person_black_24dp));
-        itemsporbazdid.add(new Recycler_model_porbazdid("امین" , R.drawable.ic_person_black_24dp));
+        itemsporbazdid.add(new Recycler_model_porbazdid("کمیته امداد" , R.drawable.emdad));
+        itemsporbazdid.add(new Recycler_model_porbazdid("هلال احمر" , R.drawable.helal));
+        itemsporbazdid.add(new Recycler_model_porbazdid("قوه قضاییه" , R.drawable.ghove));
         itemsporbazdid.add(new Recycler_model_porbazdid("کمیته امداد" , R.drawable.ic_person_black_24dp));
         itemsporbazdid.add(new Recycler_model_porbazdid("سایپا" , R.drawable.ic_person_black_24dp));
         itemsporbazdid.add(new Recycler_model_porbazdid("ایران خودرو" , R.drawable.ic_person_black_24dp));
@@ -71,9 +71,9 @@ public class Sarmaye extends Fragment {
     }
 
     public void setItems_showall(){
-        itemsshow.add(new Recycler_model_showall("هلال احمر","120,000 تومان" , " 15,000 تومان" , R.drawable.ic_person_black_24dp));
-        itemsshow.add(new Recycler_model_showall("هلال احمر","120,000 تومان" , " 15,000 تومان" , R.drawable.ic_person_black_24dp));
-        itemsshow.add(new Recycler_model_showall("هلال احمر","120,000 تومان" , " 15,000 تومان" , R.drawable.ic_person_black_24dp));
+        itemsshow.add(new Recycler_model_showall("هلال احمر","1,200,000 تومان" , " 1,100,000 تومان" , R.drawable.helal));
+        itemsshow.add(new Recycler_model_showall("قوه قضاییه","1,800,000 تومان" , " 1,500,000 تومان" , R.drawable.ghove));
+        itemsshow.add(new Recycler_model_showall("کمیته امداد","11,320,000 تومان" , " 10,115,000 تومان" , R.drawable.emdad));
         itemsshow.add(new Recycler_model_showall("هلال احمر","120,000 تومان" , " 15,000 تومان" , R.drawable.ic_person_black_24dp));
         itemsshow.add(new Recycler_model_showall("هلال احمر","120,000 تومان" , " 15,000 تومان" , R.drawable.ic_person_black_24dp));
         itemsshow.add(new Recycler_model_showall("هلال احمر","120,000 تومان" , " 15,000 تومان" , R.drawable.ic_person_black_24dp));

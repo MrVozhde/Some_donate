@@ -47,6 +47,7 @@ public class Recycler_Adapter_Showall extends RecyclerView.Adapter<Recycler_Adap
             public void onClick(View v) {
                 Intent intent = new Intent(context , ShowItems.class);
                 intent.putExtra("title" , rs.getTitle());
+                intent.putExtra("image" , rs.getImage());
                 context.startActivity(intent);
             }
         });

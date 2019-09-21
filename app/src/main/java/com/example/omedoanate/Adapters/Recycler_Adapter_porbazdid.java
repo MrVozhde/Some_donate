@@ -46,6 +46,7 @@ public class Recycler_Adapter_porbazdid extends RecyclerView.Adapter<Recycler_Ad
             public void onClick(View v) {
                 Intent intent = new Intent(context , ShowItems.class);
                 intent.putExtra("title" , rb.getTitle());
+                intent.putExtra("image" , rb.getImage());
                 context.startActivity(intent);
             }
         });

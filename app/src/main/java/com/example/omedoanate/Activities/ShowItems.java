@@ -18,9 +18,12 @@ import com.example.omedoanate.R;
 
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class ShowItems extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private CircleImageView imgprof;
     private Button btn_donate;
     private TextView txt_title , txt_goal , txt_donated , txt_donate_content;
     private RecyclerView recyclerView;
@@ -33,6 +36,7 @@ public class ShowItems extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_items);
 
+        imgprof = findViewById(R.id.img_profile_id);
         btn_donate = findViewById(R.id.btn_donate_id);
         toolbar = findViewById(R.id.toolbar_items_id);
         txt_title = findViewById(R.id.txt_title_id);
